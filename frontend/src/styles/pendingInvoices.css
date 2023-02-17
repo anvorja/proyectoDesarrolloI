@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+.pendingInvoices{
+    background-color: white;
+}
+
+article{
+    border-style: solid;
+    border-color: #BFBFBF;
+    margin-bottom: 2%;
+}
+
+
+article p{
+    width: 139px;
+    
+}
+
+article p.left{
+    margin-left: 20%;    
+}
+
+article p.rigth{
+    margin-right: 20%; 
+    background-color: #E7E6E6;   
+}
+
+article p.resaltar{
+    background-color: #FFC000;   
+}
+
+
+article p.date{
+    text-align: center;
+}
+
+
+.payButton{
+    width: 100%;
+    background-color: #ffc000;
+    font-family: 'Arial Narrow Bold';
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: black
+}
+
+.no-pendings{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+    background-color: #FFC000;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+
+}

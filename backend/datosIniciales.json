@@ -1,0 +1,58 @@
+[
+  {
+    "model": "apps.subsidio",
+    "pk": 1,
+    "fields": {
+      "estrato": 1,
+      "porcentaje": "0.4000000000"
+    }
+  },
+  {
+    "model": "apps.subsidio",
+    "pk": 2,
+    "fields": {
+      "estrato": 2,
+      "porcentaje": "0.3000000000"
+    }
+  },
+  {
+    "model": "apps.subsidio",
+    "pk": 3,
+    "fields": {
+      "estrato": 3,
+      "porcentaje": "0.1500000000"
+    }
+  },
+  {
+    "model": "apps.subsidio",
+    "pk": 4,
+    "fields": {
+      "estrato": 4,
+      "porcentaje": "0.1000000000"
+    }
+  },
+  {
+    "model": "apps.subsidio",
+    "pk": 5,
+    "fields": {
+      "estrato": 5,
+      "porcentaje": "0.00000000000"
+    }
+  },
+  {
+    "model": "apps.subsidio",
+    "pk": 6,
+    "fields": {
+      "estrato": 6,
+      "porcentaje": "0.0000000000"
+    }
+  },
+  {
+    "model": "apps.factura",
+    "pk": 1,
+    "fields": {
+      "valorUnitario": 803
+
+    }
+  }
+]

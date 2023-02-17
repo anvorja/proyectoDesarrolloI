@@ -1,0 +1,247 @@
+.contentPage {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(10deg, #eff4f4 40%, #f2f4f4 100%) !important;
+}
+.content {
+  padding: 10px;
+  justify-content: center;
+  align-items: baseline;
+  transition: all 1s;
+  display: flex;
+  position: fixed;
+  overflow-y: auto;
+  width: -webkit-calc(100% - 280px);
+  height: -webkit-calc(100% - 70px);
+  background-image: linear-gradient(10deg, #eff4f4 40%, #f2f4f4 100%);
+}
+.containerForms {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  transition: all 1s;
+}
+.containerForm {
+  border-radius: 10px;
+  transition: all 1s;
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(242, 244, 244, 0.45);
+  box-shadow: 0 10px 20px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.textfield__label {
+  background-color: #fff !important;
+}
+.mb-3 {
+  align-items: center;
+  display: flex;
+}
+
+.buttonSubmit {
+  padding-top: 15px;
+  display: flex;
+}
+
+.cabezote {
+  border-bottom: 100px solid #eff4f4;
+  height: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 50px;
+}
+.arrow-1 {
+  align-items: center;
+  display: flex;
+  animation: a2 1.5s infinite linear;
+  width: 100px;
+}
+.arrow-1:before {
+  content: "";
+  background: currentColor;
+  width: 0px;
+  height: 10px;
+  animation: a1 10s infinite linear;
+}
+.arrow-1::after {
+  content: "";
+  border-bottom: 30px solid #ffc000;
+  height: 0px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 20px;
+}
+.rec1,
+.rec2 {
+  width: 8px;
+  height: 5px;
+  left: 30px;
+  background: currentColor;
+  border-radius: 2px;
+}
+.plug {
+  display: flex;
+}
+@keyframes a1 {
+  0%,
+  100% {
+    flex-grow: 1;
+  }
+}
+@keyframes a2 {
+  from {
+    width: 20px;
+  }
+
+  to {
+    width: 100%;
+  }
+  90% {
+    width: 100%;
+  }
+}
+.plugPuntas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dash_status {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.dash_status_superior {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.status_info {
+  height: 200px;
+  width: 370px;
+  justify-content: center;
+  background-color: #ffc000;
+  box-shadow: 0 10px 20px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+}
+.estado {
+  font-size: 44px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.status_i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi.bi-dash-circle,
+.bi.bi-check2-circle {
+  font-size: 100px;
+  padding: 1px;
+}
+.status_title {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+.dash_status_inferior {
+  width: 100%;
+}
+
+.MuiPaper-root {
+  box-shadow: 0 10px 20px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px !important;
+}
+
+.fade.alert.alert-warning.show,
+.fade.alert.alert-danger.show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HU14 {
+  max-width: 700px;
+  width: 700px;
+  height: 300px;
+  background-color: aqua;
+}
+
+.clienteInfoOpen{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+  .content {
+    max-height: -webkit-calc(100% - 150px);
+    top: 70px;
+    width: 100%;
+    bottom: 80px;
+  }
+  .map-container{
+    width: 100vw !important;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+}
+@media (max-width: 600px) {
+  .fade.alert.alert-warning.show,
+  .fade.alert.alert-danger.show {
+    flex-direction: column;
+  }
+}
+
+
+.iconU2 {
+  display: flex;
+  font-size: 65px;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  align-items: center;
+}
+
+.custommy-cell-width {
+  width: 30px;
+}
+
+.custommy-cell-alignment {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.custommy-cell-padding {
+  padding: 10px;
+}
+
+.myUserPic{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.bg-curso
+{
+  background-color: #ffc000;
+}
+.MuiDialogActions-root{
+  display: none !important;
+}

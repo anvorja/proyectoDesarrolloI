@@ -1,0 +1,132 @@
+.loginContainer {
+  width: 100%;
+	margin:  0vh 0vh;
+  background-image: url(../media/logInResources/imgFondo.png);
+  background-size: 100% 100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logotipo{
+  width: 55px;
+  height: 57px;
+}
+
+.etiquetaInicio{
+  margin-left: 80px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.btn{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbarLogin{
+  background: rgba( 242, 244, 244, 0.7 ) ;
+  box-shadow: 0 10px 20px 0 rgba( 31, 38, 135, 0.37 ) ;
+  backdrop-filter: blur( 1px ) ;
+  -webkit-backdrop-filter: blur( 6px );
+  z-index: 10;
+  transition: all 1s;
+}
+.dropdown-menu.show{
+  background: rgba(242, 244, 244 , 0.7 ) !important;
+  box-shadow: 0 10px 20px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  padding: 10px;
+  transition: all 1s;
+}
+
+
+.containerFormAndText{
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 2s; 
+  display: flex;
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+.containerMiForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  transition: all 1s; 
+  max-height: 530px;
+  padding: 20px;
+  background: rgba( 242, 244, 244, 0.45 );
+  box-shadow: 0 10px 20px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.mb, .mb-3form-check{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  border: none;
+}
+.card.bg-transparent{
+  max-width: 500px;
+}
+
+
+.text{
+  font-weight: bold;
+  font-size:40px;
+  margin-block-end: 20px;
+}
+
+.reCaptcha{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 15px;
+}
+ .google_button{
+  background: none;
+  padding: 10px;
+ }
+
+.linea_login{
+  max-width: 300px ;
+  border-top: 1px solid black;
+  height: 2px;
+  padding: 0px;
+  margin: 10px auto 10px auto;
+  display: flex;
+  align-items: center;
+
+}
+
+
+@media (max-width: 980px) {
+  .navbar-collapse.collapse.show{
+    background: rgba( 242, 244, 244, 0.7 ) ;
+    box-shadow: 0 10px 20px 0 rgba( 31, 38, 135, 0.37 ) ;
+    backdrop-filter: blur( 10px ) ;
+    -webkit-backdrop-filter: blur( 10px );
+    z-index: 10;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 1s;
+  }
+
+  
+  
+}

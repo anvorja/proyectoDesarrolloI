@@ -1,0 +1,39 @@
+
+.navbar{
+    background: #FFF343;
+    position: sticky;
+    color: #000;
+    width: 100%;
+    padding: 0;
+    transition: all 1s; 
+    height: 70px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.link_nav{
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.5s;
+
+}
+.link_nav.active, .link_nav:hover{
+    background: #FFC000;
+    border-radius: 50px;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+}
+.optionsNavbar{
+    display: flex;
+    align-items: center
+}

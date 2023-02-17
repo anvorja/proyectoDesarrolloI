@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  database_rdp:
+    image: postgres:15.1-alpine
+    container_name: database
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: energyapp_db
+      POSTGRES_PASSWORD: password_db
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+    networks:
+      - rdpnetwork
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+  backend_rdp:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - ./backend/.env
+    container_name: backend
+    #command: python ./backend/manage.py 
+    restart: always
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database_rdp
+    links:
+      - database_rdp:database_rdp
+    networks:
+      - rdpnetwork
+    volumes:
+      - ./backend/apps:/apps
+      - ./backend/crud:/crud
+
+  frontend_rdp:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    restart: always
+    expose:
+      - "3000"
+    depends_on:
+      - backend_rdp
+    ports:
+      - "3000:3000"
+    networks:
+      - rdpnetwork
+    volumes:
+      - ./frontend/src:/src
+
+networks:
+  rdpnetwork:
+    driver: bridge

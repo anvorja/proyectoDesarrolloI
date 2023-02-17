@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Segoe UI";    
+    src: url("../media/onlinePay/Segoe UI.ttf");
+}
+
+
+.clientPayment{
+    background-color: #faf9f0;
+}
+
+.leftZone{
+    width: 603px;
+    height: 700px;
+}
+
+.rigthZone{
+    width: 100%;
+    border-left-style: solid;
+    border-left-color: rgba(139, 137, 137, 0.31);
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    display: inline;
+    width: 160px;
+    border-radius: 10px;
+    border: solid;
+    border-color: hsla(0,0%,10%,.1);
+    margin: 5px;
+}
+
+.acceptedCards{
+    display: inline;
+    position: relative;
+
+}
+
+.acceptedCards img{
+    width: 50px;
+    height: 50px;
+}
+
+p, label{
+    font-family: 'Segoe UI';
+    font-weight: 500;
+}
+
+label{
+    color: rgba(26, 26, 26, 0.678);
+}
+
+.leftZone p{
+    color: #FFC000;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.input-group_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.largeInput{
+    width: 190px;
+}
+.errorMsg{
+    display: flex;
+    position: relative;
+    top: -32px;
+    right: -160px;
+    padding-left: 15px;
+}
+
+.errorMsg img{
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+}
+
+.errorMsg p{
+    color: red; 
+}

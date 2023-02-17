@@ -1,0 +1,17 @@
+{
+    "terminal.integrated.fontSize": 14,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 15,
+    "editor.fontLigatures": true,
+    "editor.semanticHighlighting.enabled": false,    
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "workbench.preferredDarkColorTheme":"Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.tree.expandMode": "doubleClick",
+    "workbench.colorCustomizations": {
+    
+    }
+}

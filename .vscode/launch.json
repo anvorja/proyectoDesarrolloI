@@ -1,0 +1,43 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Backend",
+        "type": "python",
+        "python":"${workspaceFolder}/backend/env/bin/python",
+        "request": "launch",
+        "program": "${workspaceFolder}/backend/manage.py",
+        "console": "integratedTerminal",
+        "args": [
+            "runserver",
+            "--no-color",
+            "--noreload"
+        ],
+        "env":{
+          "DEBUG":"true",
+          "PYTHONPATH": "${workspaceFolder}/backend/env/bin/python",
+          "SECRET_KEY":"2rHzRb41J4PeToBnOz6cbsLF0xMhXQhSfFRZzawgt12721ddm3n#h9172",
+          "DROP_DB":"0",
+          "POSTGRES_USER":"postgres",
+          "POSTGRES_PASSWORD":"p@ssw0rd",
+          "POSTGRES_DB":"postgres",
+          "POSTGRES_HOST":"localhost",
+          "POSTGRES_PORT":"9000",
+        },
+        "django": true  
+      },{
+        "name": "Frontend",
+        "type": "node",
+        "request": "launch",
+        "skipFiles": [
+          "<node_modules>/**"
+        ],
+        "runtimeExecutable": "${workspaceFolder}/frontend/node_modules/nodemon/bin/nodemon.js",
+        "program": "${workspaceFolder}/frontend/server.js",
+        "restart": true,
+        "env": {
+          "NODE_ENV":"development"
+        }
+      }
+    ]
+  }

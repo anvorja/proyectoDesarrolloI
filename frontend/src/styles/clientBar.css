@@ -1,0 +1,19 @@
+.myCard{
+  display: flex;
+  min-width: 500px;
+  min-height: 180px ;
+}
+
+.cardSearch{
+  display: flex;
+}
+
+
+
+@media (max-width: 450px) {
+
+  .myCard{
+    min-width: auto;
+    min-height: auto;
+  }
+}
